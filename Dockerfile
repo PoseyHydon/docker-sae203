@@ -8,8 +8,10 @@ RUN  apt-get update && \
 RUN wget https://www.python.org/ftp/python/3.9.1/Python-3.9.1.tgz -O /usr/bin/env
 RUN wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
 
+COPY ./test.sh /root/
     
 RUN chmod a+rx /usr/local/bin/youtube-dl
 RUN hash -r
 
-CMD test.sh
+RUN chmod +x /root/test.sh 
+CMD ["/bin/bash", "/root/test.sh"]

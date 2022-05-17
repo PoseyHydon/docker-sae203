@@ -5,7 +5,7 @@ RUN  apt-get update && \
     apache2 \
     wget
     
-RUN wget https://www.python.org/ftp/python/3.9.1/Python-3.9.1.tgz   
+RUN wget https://www.python.org/ftp/python/3.9.1/Python-3.9.1.tgz -O /usr/bin/env
 RUN wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
     
     

@@ -7,3 +7,4 @@ RUN  apt-get update && \
     
     
 RUN chmod a+rx /usr/local/bin/youtube-dl
+RUN youtube-dl https://www.youtube.com/watch?v=dQw4w9WgXcQ

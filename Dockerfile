@@ -6,7 +6,7 @@ RUN  apt-get update && \
     apache2 \
     wget
     
-RUN apt install \
+RUN apt -y install \
     build-essential \
     zlib1g-dev \
     libncurses5-dev \

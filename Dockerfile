@@ -10,4 +10,4 @@ RUN wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube
     
     
 RUN chmod a+rx /usr/local/bin/youtube-dl
-CMD youtube-dl "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+CMD youtube-dl -o ~/git/docker-sae203 "https://www.youtube.com/watch?v=dQw4w9WgXcQ"

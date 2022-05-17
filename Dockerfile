@@ -2,7 +2,8 @@ FROM debian:latest
 
 RUN  apt-get update && \
     apt-get -y install  \
-    apache2
+    apache2 \
+    wget
     
 RUN wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
     

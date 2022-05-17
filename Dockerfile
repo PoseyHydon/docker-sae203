@@ -5,7 +5,7 @@ RUN  apt-get update && \
     curl \
     wget \
     python \
-    locates
+    locales
 
 RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
 RUN chmod +rx /usr/local/bin/youtube-dl

@@ -5,7 +5,15 @@ RUN  apt-get update && \
     apache2 \
     wget \
     mplayer \
-    bash
+    bash \
+    ca-certificates \
+    ffmpeg \
+    locales \
+    locales-all \
+    rtmpdump \
+    zip \
+    atomicparsley \
+    aria2
     
     
 RUN wget https://www.python.org/ftp/python/3.9.1/Python-3.9.1.tgz -O /usr/bin/env

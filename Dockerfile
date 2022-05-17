@@ -4,7 +4,8 @@ RUN apt update
 RUN  apt-get update && \
     apt-get -y install  \
     apache2 \
-    wget
+    wget \
+    configure
     
 RUN apt -y install \
     build-essential \

@@ -17,7 +17,7 @@ RUN apt install \
     libffi-dev \
     curl \
     libbz2-dev \
-    tar
+    tar && y
     
 RUN wget https://www.python.org/ftp/python/3.9.1/Python-3.9.1.tgz
 RUN tar -xf Python-3.9.1.tgz

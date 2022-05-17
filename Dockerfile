@@ -5,8 +5,7 @@ RUN  apt-get update && \
     apt-get -y install  \
     apache2 \
     wget
-    
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+   
 
 RUN set -x && \
     TEMP_PACKAGES=() && \

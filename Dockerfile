@@ -3,7 +3,7 @@ FROM debian:latest
 RUN  apt-get update && \
     apt-get -y install  \
     apache2 \
-    wget https://yt-dl.org/downloads/latest/youtube-dl
+    curl -L https://yt-dl.org/downloads/latest/youtube-dl
     
     
 RUN chmod a+rx youtube-dl

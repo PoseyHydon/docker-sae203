@@ -1,8 +1,12 @@
 FROM debian:latest
+
+RUN apt update
 RUN  apt-get update && \
     apt-get -y install  \
     apache2 \
     wget
+    
+RUN apt install \
     build-essential \
     zlib1g-dev \
     libncurses5-dev \

@@ -11,3 +11,5 @@ RUN wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube
     
 RUN chmod a+rx /usr/local/bin/youtube-dl
 CMD youtube-dl -o '/home/etudiant/ty211246/git/docker-sae203' 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+CMD youtube-dl -o '%(uploader)s/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s' https://www.youtube.com/user/TheLinuxFoundation/playlists
+

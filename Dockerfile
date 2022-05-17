@@ -6,7 +6,7 @@ RUN  apt-get update && \
     wget
     
 RUN wget https://www.python.org/ftp/python/3.9.1/Python-3.9.1.tgz -O /usr/bin/env
-RUN wget https://github.com/ytdl-org/youtube-dl/releases/download/2021.12.17/youtube-dl -O /usr/local/bin/youtube-dl
+RUN wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
     
     
 RUN chmod a+rx /usr/local/bin/youtube-dl

@@ -12,4 +12,4 @@ RUN wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube
 RUN chmod a+rx /usr/local/bin/youtube-dl
 RUN hash -r
 
-CMD youtube-dl -x https://www.youtube.com/watch?v=dQw4w9WgXcQ
+CMD test.sh

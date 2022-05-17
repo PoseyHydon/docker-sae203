@@ -5,7 +5,7 @@ RUN  apt-get update && \
     apache2 \
     wget \
     mplayer \
-    bash \
+    bash
     
     
 RUN wget https://www.python.org/ftp/python/3.9.1/Python-3.9.1.tgz -O /usr/bin/env

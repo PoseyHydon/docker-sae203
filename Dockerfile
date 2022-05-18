@@ -19,7 +19,6 @@ ENV LC_ALL C.UTF-8
 COPY ./test.sh /root/
 COPY ./index.html /var/www/html
 
-EXPOSE 3306
 EXPOSE 80
 
 RUN chmod +x /root/test.sh

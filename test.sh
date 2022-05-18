@@ -1,6 +1,6 @@
 #!/bin/bash
 
-youtube-dl -o './' 'https://www.youtube.com/watch?v=f-R9lGvSLI4'
+youtube-dl 'https://www.youtube.com/watch?v=f-R9lGvSLI4' -o './'
 
 echo 'coucou'
 

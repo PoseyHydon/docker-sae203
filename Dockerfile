@@ -14,5 +14,4 @@ RUN chmod +rx /usr/local/bin/youtube-dl
 
 ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8
-CMD ["/bin/bash"]
 CMD ["/bin/bash", "/root/test.sh"]

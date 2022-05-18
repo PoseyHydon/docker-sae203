@@ -12,10 +12,6 @@ RUN  apt-get update && \
 RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
 RUN chmod +rx /usr/local/bin/youtube-dl
 
-RUN youtube-dl -o /mydir https://www.youtube.com/watch?v=f-R9lGvSLI4
-
-COPY /ronaldo_drinking_meme-f-R9lGvSLI4.mp4 ./
-
 ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8
 CMD ["/bin/bash"]

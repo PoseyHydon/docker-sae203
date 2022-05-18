@@ -10,4 +10,7 @@ RUN  apt-get update && \
 RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
 RUN chmod +rx /usr/local/bin/youtube-dl
 
-RUN youtube-dl -o /home/etudiant/ty211246/git/docker-sae203 https://www.youtube.com/watch?v=dQw4w9WgXcQ
+ENV LANG C.UTF-8
+ENV LC_ALL C.UTF-8
+CMD ["/bin/bash"]
+ENTRYPOINT ["/usr/local/bin/youtube-dl"]

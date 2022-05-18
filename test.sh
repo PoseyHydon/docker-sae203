@@ -1,6 +1,7 @@
 #!/bin/bash
 
-youtube-dl -o /var/www/html 'https://www.youtube.com/watch?v=f-R9lGvSLI4'
+youtube-dl 'https://www.youtube.com/watch?v=f-R9lGvSLI4'
+mv *.mp4 /var/www/html
 
 
 
